@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: backend-social-kids
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongo
+    volumes:
+      - .:/usr/src/app
+    env_file:
+      - .env
+
+  frontend:
+    build:
+      context: ./fe-social-kids
+      dockerfile: Dockerfile
+    image: frontend-social-kids
+    depends_on:
+      - backend
+    ports:
+      - '8386:80'
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo-data:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongo-data:

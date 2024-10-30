@@ -1,0 +1,44 @@
+.repo-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   }
+   
+   .repo-list h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+   }
+   
+   .repo-list select {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+   }
+   
+   .repo-list ul {
+    list-style-type: none;
+    padding: 0;
+   }
+   
+   .repo-list li {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+   }
+   
+   .repo-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+   }
+   
+   .repo-list p {
+    margin-bottom: 0.5rem;
+   }
