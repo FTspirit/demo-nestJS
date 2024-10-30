@@ -39,10 +39,6 @@ cd demo-nestJS`
 
 1.  **Using Docker Compose**:
 
-    bash
-
-    Copy code
-
     `docker compose up -d --build`
 
     This command will:
